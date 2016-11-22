@@ -22,5 +22,16 @@ namespace Aplicada1_p2.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\BaseBase\\Parc" +
+            "ial2Db.mdf;Integrated Security=True;Connect Timeout=30")]
+        public string ConStrs {
+            get {
+                return ((string)(this["ConStrs"]));
+            }
+        }
     }
 }
